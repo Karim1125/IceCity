@@ -79,8 +79,6 @@ README.md
 
 ## 3. Domain Models
 
-## 3. Domain Models
-
 ### House (Base)
 ```
 ├── Id                  : int
