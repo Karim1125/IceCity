@@ -276,10 +276,3 @@ After launching:
 * The console menu opens
 
 The system is ready for interactive operations.
-
-If you'd like, I can also generate:
-
-* A printable PDF version of this README
-* A project architecture diagram
-* A GitHub Wiki version
-* A UML class diagram for your documentation
