@@ -134,7 +134,7 @@ Readable and production-ready:
       {
         "Name": "File",
         "Args": {
-          "path": "D:\\.Net\\CIS\\IceCity Data Management System\\Logs/icecity-log-.txt",
+          "path": "Logs/icecity-log-.txt",
           "rollingInterval": "Day",
           "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [{Level}] {Message}{NewLine}{Exception}"
         }
