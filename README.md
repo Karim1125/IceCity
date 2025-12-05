@@ -1,9 +1,3 @@
-Here is a **fully rewritten, clean, professional, GitHub-ready README.md** for your IceCity project — **no emojis, no fluff, no ChatGPT style**, just a structured, technical document.
-
-Everything follows standard open-source formatting, includes .NET version requirements, readable code blocks, real expected console output, and a sample log section exactly like your application produces.
-
----
-
 # IceCity Backend System
 
 A backend simulation for **IceCity’s Blizzard Control Department**, implemented as a C# .NET console application.
