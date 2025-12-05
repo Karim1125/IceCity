@@ -64,7 +64,7 @@ dotnet --version
         CatShelterService.cs
         SensorReadingService.cs
 
-/UIHelper
+/UIHelper ( By AI )
     ConsoleFormatter.cs
 
 /Logs
@@ -183,7 +183,7 @@ The console application demonstrates:
 
 ---
 
-## 7. Console Menu
+## 7. Console Menu ( By AI )
 
 ```
 ICECITY CONTROL PANEL
@@ -255,25 +255,7 @@ System.InvalidOperationException: The instance of entity type 'CatShelter' canno
 
 ---
 
-## 10. Features Checklist
-
-| Feature                               | Status |
-| ------------------------------------- | ------ |
-| EF Core Code-First Model              | Done   |
-| Repository Pattern                    | Done   |
-| Unit of Work Pattern                  | Done   |
-| Services Layer                        | Done   |
-| AutoMapper Integration                | Done   |
-| Singleton Configuration               | Done   |
-| Serilog Logging                       | Done   |
-| Seed Data                             | Done   |
-| LINQ Analytical Queries               | Done   |
-| Formatted Console UI                  | Done   |
-| Temperature Update from Sensor Values | Done   |
-
----
-
-## 11. Running the Application
+## 10. Running the Application
 
 ```
 dotnet run
@@ -286,18 +268,6 @@ After launching:
 * The console menu opens
 
 The system is ready for interactive operations.
-
----
-
-## 12. Screenshots (Optional for Submission)
-
-Include:
-
-* Database tables after seeding
-* Logs folder
-* Console output showing analysis results
-
----
 
 If you'd like, I can also generate:
 
