@@ -79,7 +79,7 @@ README.md
 
 ## 3. Domain Models
 
-#### House (Base)
+### House (Base)
 ├── Id                  : int
 ├── OwnerName           : string
 ├── Heaters             : int
@@ -87,14 +87,16 @@ README.md
 ├── OutsideTemperature  : decimal
 └── Discriminator       : string (EF Core inheritance)
 
-#### CatShelter : House
-└── CatName     : string
 
-#### SensorReading
+### CatShelter : House
+└── CatName             : string
+
+### SensorReading
 ├── Id          : int
 ├── HouseId     : int (FK)
 ├── Temperature : decimal
 └── Timestamp   : DateTime
+
 
 
 ---
