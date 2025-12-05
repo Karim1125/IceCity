@@ -22,7 +22,7 @@ namespace IceCity_Data_Management_System.Services.Implementations
         public async Task<CatShelterDto> AddAsync(CreateCatShelterDto dto)
         {
             var house = await _uow.Houses.GetByIdAsync(dto.Id)
-                ?? throw new Exception("House not found.");
+                ?? throw new InvalidOperationException("House not found.");
 
             if (house is CatShelter existing)
             {

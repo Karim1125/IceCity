@@ -1,5 +1,6 @@
 ﻿using IceCity_Data_Management_System.Configuration;
 using IceCity_Data_Management_System.Services.Interfaces;
+using Serilog;
 
 namespace IceCity_Data_Management_System.UIHelper
 {
@@ -162,22 +163,31 @@ namespace IceCity_Data_Management_System.UIHelper
                         break;
 
                     case "9":
+
                         ConsoleFormatter.Header("ADD CAT SHELTER");
-
-                        Console.Write("House ID: ");
-                        var shid = int.Parse(Console.ReadLine() ?? "0");
-
-                        Console.Write("Cat Name: ");
-                        var cat = Console.ReadLine() ?? "";
-
-                        var createdShelter = await shelterService.AddAsync(new CreateCatShelterDto
+                        try
                         {
-                            Id = shid,
-                            CatName = cat
-                        });
+                            Console.Write("House ID: ");
+                            var shid = int.Parse(Console.ReadLine() ?? "0");
 
-                        ConsoleFormatter.Success($"Cat Shelter updated → {createdShelter.CatName}");
+                            Console.Write("Cat Name: ");
+                            var cat = Console.ReadLine() ?? "";
+
+                            var createdShelter = await shelterService.AddAsync(new CreateCatShelterDto
+                            {
+                                Id = shid,
+                                CatName = cat
+                            });
+
+                            ConsoleFormatter.Success($"Cat Shelter updated → {createdShelter.CatName}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Error(ex, "Error creating CatShelter");
+                            ConsoleFormatter.Error(ex.Message); 
+                        }
                         break;
+
 
                     case "10":
                         return;
@@ -226,7 +236,7 @@ namespace IceCity_Data_Management_System.UIHelper
             Console.ForegroundColor = ConsoleColor.Magenta;
 
             foreach (var col in columns)
-                Console.Write($"{col,-20}");
+                Console.Write($"{col:0.00}");
 
             Console.WriteLine();
             Console.WriteLine(new string('-', 20 * columns.Length));
